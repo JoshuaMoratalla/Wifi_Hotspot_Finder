@@ -1,0 +1,477 @@
+body{
+	background-image: url("https://i.imgur.com/2PoqtAP.png");
+    
+}
+
+/*css for registration and login forms*/
+
+/*redefine label tag */
+label {
+    font-weight: bold;
+}
+
+/*create class error_message to be used when an error occurs when submitting a form*/
+.error_message {
+    color: red;
+    font-style: italic;
+}
+
+/*create class required_field which will contain an input, label and error span on a form*/
+.required_field {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/*create class registration_and_login to be used on the user registration and login forms*/
+.registration_and_login {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 340px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 45px;
+    padding-right: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/*redefine h3 tag for .registration_and_login forms */
+.registration_and_login h3 {
+    font-size: 18pt;
+    color: orangered;
+}
+
+/*redefine h2 tag for .registration_and_login forms*/
+.registration_and_login h2 {
+    padding-bottom: 4px;
+    text-align: left;
+}
+
+.registration_and_login p {
+    color: orangered;
+    font-size: 14pt;
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
+
+#login_successful {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 45px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 15px;
+}
+
+#login_successful h1 {
+    line-height: 30px;
+    text-align: center;
+    font-size: 25pt;
+}
+
+#login_successful p {
+    font-size: 12pt;
+    text-align: center;
+}
+
+/*redefine the input tags to have a width of 90% of the form*/
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"] {
+    width: 90%;
+}
+
+/*create class submit_button_holder. This will contain the submit button which needs to be centered*/
+.submit_button_holder {
+    text-align: center;
+}
+
+/*create class submit_account to be used on submit buttons on login and registration forms*/
+.submit_account {
+    font-size: 17pt;
+    padding: 12px;
+    background-color: #eceef0;
+    cursor: pointer;
+    border-radius: 2px;
+    border-width: 2px;
+    margin-top: 8px;
+}
+
+/*change the style of .submit_account when the submit button is hovered over*/
+.submit_account:hover {
+    background-color: grey;
+    border-style: solid;
+}
+
+#header {
+    width: 905px;
+    height: 135px;
+    margin: auto;
+    padding-left: 55px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: white;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border: 1px solid #ccc;
+}
+
+#lat_holder, #long_holder {
+    display: none;
+}
+
+/* results page css */
+
+/*Style the division that contains the map with markers on the search results */
+#resultsMap {
+    height: 350px;
+    width: 800px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border:black solid;
+}
+
+/*style the results id*/
+#results {
+    padding:50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    width: 800px;
+    border-radius: 10px;
+}
+
+/* redefine the table tag to take up the whole of its division and have a collapsed border */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*redefine th and td to stylise the tables e.g. results table*/
+th, td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+}
+
+/*itemPage CSS*/
+
+/*wrapper id for the itempage*/
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 950px;
+    height: 640px;
+}
+
+/*wrapper id for elements on the left hand side of the page*/
+#left_wrapper {
+    float: left;
+    width: 450px;
+}
+
+/*wrapper id for elements on the right hand side of the page*/
+#right_wrapper {
+    float: right;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 490px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    height: 630px;
+}
+
+/*style the location id that will contain the map of where the hotspot is */
+#mapIndividual {
+    border-style: ridge;
+    height: 350px;
+    width: 420px;
+    border-width: 5px;
+    margin-left: 10px;
+}
+
+/*style the info id which will contain an overview on hotspot information */
+#info {
+    height: 235px;
+    width: 430px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 2px;
+	margin-top: 10px;
+	margin-bottom: 100px;
+    padding-bottom: 8px;
+    padding-top: 23px;
+    margin-left: 7px;
+}
+
+/* redefine the h2 tag of #info */
+#info h2 {
+    margin-bottom: 0px;
+}
+
+/* style id that contains details of the hotspot */
+#details {
+    font-size: 17pt;
+    text-align: left;
+    margin-left: 65px;
+    word-spacing: 5px;
+}
+
+/*style of span that will show the character limit of the review */
+.char_limit {
+    margin-right: 15px;
+    float: right;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 0px;
+    font-family: monospace
+}
+
+/*style of span that will show the star rating left by the user */
+.star_rating {
+    margin-left: 1px;
+    margin-top: -13px;
+    float: left;
+}
+
+/*create reviews id that contains the reviews on the hotspot*/
+#reviews {
+    margin-left: 10px;
+    width: 440px;
+    height: 270px;
+    background-color: whitesmoke;
+    overflow-y: scroll;
+    border-bottom-width: 5px;
+    border-style: double;
+    border-color: grey;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 3px;
+}
+
+/*style class review to be used on each individual review that is written about the hotspot*/
+.review {
+    border-style: solid;
+    border-color: cornflowerblue;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*redefine the h3 tag for the class .review*/
+.review h3 {
+    text-align: center;
+    font-weight: normal;
+    line-height: 30px;
+}
+.review p {
+    border: antiquewhite solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*create id for user_review, the division where the user inputs their review about the hotspot*/
+#user_review {
+    width: 450px;
+    padding-left: 10px;
+    border: aliceblue ridge;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 250px;
+}
+
+/*restyle the .submit_button_holder class to have a larger margin-top*/
+#user_review .submit_button_holder {
+    margin-top: 15px;
+}
+
+/*redefine the h3 tag within #user_review */
+#user_review h3 {
+    text-align: left;
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+/*redefine the textarea input within #user_review */
+#user_review textarea {
+    width: 435px;
+    height: 70px;
+    resize: none;
+}
+
+/*style id no_review, to be used when the user can't leave a review*/
+#no_review {
+    width: 450px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-style: ridge;
+    margin-top: 100px;
+    margin-left: 12px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    font-size: 15pt;
+    text-align: center;
+}
+
+/*restyle the <a> tag in #no_review (make links italic) */
+#no_review a {
+    font-style: italic;
+}
+
+
+h4{
+	float: left;
+	display: inline;
+}
+
+#LoginObjects{
+	float:none;
+	margin-bottom: 15px;
+}
+#LoginObjects button{
+	margin-left:55px;
+}
+
+#LoginBox{
+	background-color: burlywood;
+	width: 400px;
+}
+#LoginElements td{
+	padding: 5px;
+}
+
+#mapAPI {
+	height: 300px;
+	width: 600px;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+}
+
+td{
+	padding: 5px;
+}
+
+
+#Title{
+	text-align: center;
+	width:100%;
+	height: 50px;
+	border-radius: 3px;
+}
+#Title h1{
+	padding: inherit;
+	margin: auto;
+}
+
+#Navigation{	
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	width: 600px;
+	height: 50px;
+	background-color: #ccc;
+	border-radius: 3px;
+	right: 0;
+	left: 0;
+}
+
+#Navigation a{
+	margin: auto;
+	padding: inherit;
+	float: left;
+	text-align: center;
+	height: 20px;
+	width: 150px;
+	text-decoration: none;
+	font-size: 17px;
+	background-color: aquamarine;
+	font: "Arial", sans-serif;
+}
+
+#Image {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	width: 50%;
+	height: 30%;
+	margin-top: 70px;
+}
+
+#Search{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	background-color: #ccc;
+	border-radius: 3px;
+	right: 0;
+	left: 0;
+	display: inline-flex;
+}
+
+#SearchObjects{
+	padding: 15px;
+	text-align: center;
+}
+
+#main{
+	position: absolute;
+	margin: auto;
+    width: 360px;
+    height: 370px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	background-color: #ccc;
+	border-radius: 3px;
+}
+
+/*create style for the footer id*/
+#footer {
+    width: 100%;
+    height: auto;
+	margin: 0px auto;
+	bottom: 0px;
+	position: fixed;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+}
